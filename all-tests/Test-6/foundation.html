@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation Form with Validations</title>
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites/dist/css/foundation.min.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <h2>Contact Form</h2>
+    <form id="contactForm" data-abide novalidate>
+
+      <!-- First Name -->
+      <label>First Name
+        <input type="text" id="firstName" placeholder="Enter your first name" required pattern="^[A-Za-z]{1,20}$">
+        <span class="form-error">First name is required and must contain only letters (1-20 characters).</span>
+      </label>
+
+      <!-- Last Name -->
+      <label>Last Name
+        <input type="text" id="lastName" placeholder="Enter your last name" required pattern="^[A-Za-z]{1,20}$">
+        <span class="form-error">Last name is required and must contain only letters (1-20 characters).</span>
+      </label>
+
+      <!-- Password -->
+      <label>Password
+        <input type="password" id="password" placeholder="Enter a password" required minlength="1" maxlength="6" />
+        <span class="form-error">Password must be between 1 and 6 characters long.</span>
+      </label>
+
+      <!-- Gender Selection -->
+      <fieldset class="fieldset">
+        <legend>Gender</legend>
+        <input type="radio" name="gender" value="male" id="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female" id="female" required>
+        <label for="female">Female</label>
+        <span class="form-error">Please select your gender.</span>
+      </fieldset>
+
+      <!-- Message Box -->
+      <label>Message
+        <textarea id="message" placeholder="Write your message here" rows="4" required></textarea>
+        <span class="form-error">Please enter a message.</span>
+      </label>
+
+      <!-- Submit Button -->
+      <button type="submit" class="button primary">Submit</button>
+
+    </form>
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Foundation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites/dist/js/foundation.min.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+</body>
+</html>
