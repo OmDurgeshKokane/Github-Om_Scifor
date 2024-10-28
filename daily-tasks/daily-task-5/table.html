@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation Striped Table</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css">
+  <style>
+    /* Custom striped rows */
+    .striped-table tbody tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+
+<div class="grid-container mt-4">
+  <h2>Foundation Striped Table</h2>
+  <table class="striped-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mary</td>
+        <td>Smith</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>James</td>
+        <td>Bond</td>
+        <td>james@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/js/foundation.min.js"></script>
+</body>
+</html>
