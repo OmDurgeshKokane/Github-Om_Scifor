@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+
+    <h1>Arithmatic Oprators</h1>
+    <button id="add">Addition</button>
+    <button id="sub">Subtract</button>
+    <button id="mul">Multiply</button>
+    <button id="div">Division</button>
+    <button id="mod">Module</button>
+
+<script>
+    let add = (a,b)=>{
+        alert(a+b);
+    }
+    let sub = (a,b)=>{
+        alert(a-b);
+    }
+    let mul = (a,b)=>{
+        alert(a*b)
+    }
+    let div = (a,b)=>{
+        alert( a/b)
+    }
+    let mod = (a,b)=>{
+        alert( a%b)
+    }
+
+    let btn1 = document.querySelector("#add");
+    btn1.addEventListener("click", ()=>{
+        let a = parseInt(prompt("Enter the no1"));
+        let b = parseInt(prompt("Enter the no2"));
+        add(a,b);
+    })
+
+    let btn2 = document.querySelector("#sub");
+
+    btn2.addEventListener("click", ()=>{
+        let a = parseInt(prompt("Enter the no1"));
+        let b = parseInt(prompt("Enter the no2"));
+        sub(a,b);
+    })
+
+    let btn3 = document.querySelector("#mul");
+
+    btn3.addEventListener("click", ()=>{
+        let a = parseInt(prompt("Enter the no1"));
+        let b = parseInt(prompt("Enter the no2"));
+        mul(a,b);
+    })
+
+    let btn4 = document.querySelector("#div");
+
+    btn4.addEventListener("click", ()=>{
+        let a = parseInt(prompt("Enter the no1"));
+        let b = parseInt(prompt("Enter the no2"));
+        div(a,b);
+    })
+
+    let btn5 = document.querySelector("#mod");
+
+    btn5.addEventListener("click", ()=>{
+        let a = parseInt(prompt("Enter the no1"));
+        let b = parseInt(prompt("Enter the no2"));
+        mod(a,b);
+    })
+</script>
+</body>
+</html>
