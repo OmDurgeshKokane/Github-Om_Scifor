@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <h3>First Number is : <b>100</b></h3>
+  <h3>Second Number is : <b>50</b></h3>
+
+  <form id="calculator">
+    <label for="operation">Select an operation:</label>
+    <select id="operation">
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+      <option value="divide">Divide</option>
+      <option value="divide">Module</option>
+    </select>
+    <br><br>
+    <button type="button" onclick="calculate()">Calculate</button>
+  </form>
+  <h2 id="result">Result: </h2>
+
+  <script>
+    let num1 = 100;
+    let num2 = 50;
+
+    function calculate() {
+      const operation = document.getElementById("operation").value;
+      let result;
+
+      // Perform calculation based on selected operation
+      switch (operation) {
+        case "add":
+          result = num1 + num2;
+          break;
+        case "subtract":
+          result = num1 - num2;
+          break;
+        case "multiply":
+          result = num1 * num2;
+          break;
+        case "divide":
+          if (num2 === 0) {
+            result = "Error! Division by zero.";
+          } else {
+            result = num1 / num2;
+          }
+        case "module":
+          result = num1 % num2;
+          break;
+        default:
+          result = "Invalid operation";
+      }
+
+      // Display the result in the <h2> element
+      document.getElementById("result").textContent = `Result: ${result}`;
+    }
+  </script>
+</body>
+</html>
