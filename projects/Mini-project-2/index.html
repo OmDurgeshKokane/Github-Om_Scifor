@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Om Kokane - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section: Image -->
+    <div class="left-section">
+      <img src="./images/IMG_8466.jpg" alt="Om Kokane" class="profile-pic">
+    </div>
+
+    <!-- Right Section: Content -->
+    <div class="right-section">
+      <!-- Header -->
+      <header>
+        <div class="logo">Om Kokane</div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <section id="about">
+        <h1>Hi, I'm Om Kokane</h1>
+        <p class="bio">
+          I am a full-stack developer with a passion for creating responsive and dynamic web applications. I specialize in building efficient and scalable applications using modern web technologies. From crafting elegant front-end designs to engineering robust back-end systems, I aim to deliver seamless digital experiences.
+          I am always eager to learn and adapt to the latest industry trends and collaborate on innovative projects.
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li data-skill="HTML">HTML</li>
+          <li data-skill="CSS">CSS</li>
+          <li data-skill="CSS">Taliwind Css</li>
+          <li data-skill="CSS">BootStrap</li>
+          <li data-skill="JavaScript">JavaScript</li>
+          <li data-skill="CSS">React.js</li>
+          <li data-skill="Node.js">Node.js</li>
+          <li data-skill="MongoDB">MongoDB</li>
+          <li data-skill="CSS">SQL</li>
+          <li data-skill="CSS">Git/GitHub</li>
+
+
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="./images/SpotifyClone.png" alt="Spotify Website">
+            <h3>Spotify Clone</h3>
+            <p>A Clone website for Music enthusiasts.</p>
+            <a href="https://github.com/OmDurgeshKokane/Spotify-Clone" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <img src="./images/covid-19.png" alt="Covid">
+            <h3>Covid-Precautions-Information-website
+            </h3>
+            <p>An Covid-19 how to take Precautions </p>
+            <a href="https://github.com/OmDurgeshKokane/Covid-Precautions-Information-website" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <img src="./images/Amazonclone.png" alt="amzonclone">
+            <h3>Amazon Clone Website</h3>
+            <p>A Clone website for Purchasing enthusiasts.</p>
+            <a href="https://github.com/OmDurgeshKokane/Amazon-Clone-Main_page" target="_blank">View on GitHub</a>
+          </div>
+          <div class="project-card">
+            <img src="./images/Dance.png" alt="dance">
+            <h3>Dance Website</h3>
+            <p>An Dance Addmission platform with a modern design.</p>
+            <a href="https://github.com/OmDurgeshKokane/Dance-MERN-website" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            <div class="invalid-feedback">Please enter your name.</div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" name="message" rows="3" placeholder="Write your message here" required></textarea>
+            <div class="invalid-feedback">Please enter a message.</div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <button id="scrollTopBtn">↑</button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
