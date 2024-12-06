@@ -2,8 +2,9 @@ let divElement = document.querySelector('div');
 let btn = document.querySelector('button');
 
 btn.addEventListener('click', async ()=>{
+    divElement.innerText = ""
     const data = await randomJoke()
-    divElement.prepend(data);
+    divElement.append(data);
 })
 
 async function randomJoke(){
