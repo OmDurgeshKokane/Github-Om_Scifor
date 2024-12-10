@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Functional Component</title>
+  <!-- React and ReactDOM CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Babel CDN for JSX support -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    // Define the functional component
+    const HeadingAndParagraph = () => (
+      <div>
+        <h1>Hello from React!</h1>
+        <p>This is a functional component rendered in a standalone HTML page.</p>
+      </div>
+    );
+
+    // Render the component to the DOM
+    ReactDOM.render(<HeadingAndParagraph />, document.getElementById('root'));
+  </script>
+</body>
+</html>
