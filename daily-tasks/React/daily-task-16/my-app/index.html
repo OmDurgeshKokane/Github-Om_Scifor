@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Functional Component</title>
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      max-width: 600px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .heading {
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    .paragraph {
+      color: #7f8c8d;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- React Root -->
+  <div id="root"></div>
+
+  <!-- JSX Script -->
+  <script type="text/babel">
+    // Define a React Functional Component
+    const MyComponent = () => {
+      return (
+        <div className="container">
+          <h1 className="heading">Welcome to My React App</h1>
+          <p className="paragraph">
+            This is a beautifully styled paragraph designed to create an elegant and nice user interface. 
+            With clean lines, soft colors, and readable fonts, this layout is perfect for modern web applications.
+          </p>
+        </div>
+      );
+    };
+
+    // Render the Component to the DOM
+    ReactDOM.render(<MyComponent />, document.getElementById('root'));
+  </script>
+</body>
+</html>
