@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React in One Page with Styling</title>
+  <!-- React and ReactDOM CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Babel CDN for JSX support -->
+  <script src="https://unpkg.com/@babel/standalone@7.21.4/babel.min.js"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #555;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    p strong {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    // UserDetails Functional Component
+    function UserDetails(props) {
+      return (
+        <div className="container">
+          <h2>User Details</h2>
+          <p><strong>Name:</strong> {props.name}</p>
+          <p><strong>Age:</strong> {props.age}</p>
+          <p><strong>Email:</strong> {props.email}</p>
+          <p><strong>Mobile No:</strong> {props.mobileNo}</p>
+          <p><strong>City:</strong> {props.city}</p>
+        </div>
+      );
+    }
+
+    // App Component to Render UserDetails
+    function App() {
+      const user = {
+        name: "Om Kokane",
+        age: 30,
+        email: "om.kokane12345@gmail.com",
+        mobileNo: "123-456-7890",
+        city: "Pune"
+      };
+
+      return (
+        <div>
+          <UserDetails
+            name={user.name}
+            age={user.age}
+            email={user.email}
+            mobileNo={user.mobileNo}
+            city={user.city}
+          />
+        </div>
+      );
+    }
+
+    // Rendering App Component
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>
