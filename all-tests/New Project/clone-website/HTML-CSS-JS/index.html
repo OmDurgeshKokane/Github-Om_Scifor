@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./images/image.png">
+    <title>Generic Company</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -53,22 +54,22 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#aboutus">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Solutions</a>
+              <a class="nav-link" href="#solutions">Solutions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Events</a>
+              <a class="nav-link" href="#events">Events</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Training</a>
+              <a class="nav-link" href="#traning">Training</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#contactus">Contact Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -79,7 +80,6 @@
         </div>
       </div>
     </nav>
-
     <hr class="hrline" />
 
     <div class="carsoual-container">
@@ -121,7 +121,7 @@
     </div>
     <!-- <hr class="hrline"> -->
 
-    <div class="aboutUs-contanier">
+    <div class="aboutUs-contanier" id="aboutus">
       <div class="titile">
         <h4>About Us</h4>
         <hr />
@@ -141,7 +141,7 @@
       <button class="btn">Read More</button>
     </div>
 
-    <div class="services-contanier">
+    <div class="services-contanier" id="services">
       <div class="title">
         <h4>Our Services</h4>
         <hr />
@@ -194,7 +194,7 @@
       </div>
     </div>
 
-    <div class="solutions-contanier">
+    <div class="solutions-contanier" id="solutions">
       <div class="title">
         <h4>Solutions</h4>
         <hr />
@@ -227,7 +227,7 @@
       </div>
     </div>
 
-    <div class="events-contanier">
+    <div class="events-contanier" id="events">
       <div class="title">
         <h4>Our Events</h4>
         <hr />
@@ -253,35 +253,62 @@
       </div>
     </div>
 
-    <section class="testimonials">
+    <div
+      style="
+        background-image: url('./images/background.jpg');
+        position: relative;
+        top: 0.5rem;
+      "
+    >
+      <h1 class="testimonial-h3" style="color: white">Testimonials</h1>
+      <h6 class="testimonial-h6" style="color: white">
+        what people say about us
+      </h6>
+    </div>
+    <section class="testimonials" id="traning">
       <div class="testimonial-container">
         <div class="testimonial-card">
           <p class="testimonial-text">
-            "Amazing service! The team really exceeded my expectations."
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            impedit quam vitae quibusdam adipisci cupiditate dolorem iusto
+            minima, minus facilis harum, cum corrupti optio eos?
           </p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text">
-            "I couldn't be happier with the results. Highly recommend."
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            rerum nemo eos saepe ea, consequuntur, nisi assumenda sit doloremque
+            dicta, obcaecati suscipit nam ad magni?
           </p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text">
-            "Professional and quick delivery. Will use again!"
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus iusto
+            perspiciatis eos est nesciunt! Modi earum molestias nihil.
+            Cupiditate eum est et nobis ab dolore?
           </p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text">
-            "Highly professional and excellent communication throughout."
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
+            hic officiis corrupti sequi laboriosam pariatur. Esse tenetur
+            delectus ab assumenda deleniti temporibus dolores, aut natus.
           </p>
         </div>
         <div class="testimonial-card">
           <p class="testimonial-text">
-            "I am really impressed with their services and attention to detail."
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            impedit aliquid possimus culpa vel eaque maiores porro id! Atque
+            minus similique, molestiae tenetur ratione nesciunt!
           </p>
         </div>
         <div class="testimonial-card">
-          <p class="testimonial-text">"om"</p>
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+            veniam doloribus molestias officiis maxime praesentium voluptates
+            dignissimos commodi labore quisquam sunt obcaecati, quidem quaerat
+            distinctio?
+          </p>
         </div>
       </div>
       <div class="scroll-buttons">
@@ -290,6 +317,117 @@
       </div>
     </section>
 
+    <section class="company-info" id="contactus">
+      <div class="location">
+        <i class="fa-solid fa-location-dot"></i>
+        <h5>Aundh, Pune 411007</h5>
+      </div>
+      <div class="call">
+        <i class="fa-solid fa-phone"></i>
+        <h5>+91 9272150171 / +91 8805494880</h5>
+      </div>
+      <div class="address">
+        <i class="fa-solid fa-envelopes-bulk"></i>
+        <h5>info@godwittech.com</h5>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>Links</h4>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right"></i> Home</a>
+            </li>
+            <li>
+              <a href="#aboutus"><i class="fa-solid fa-angle-right"></i> About Us</a>
+            </li>
+            <li>
+              <a href="#services"><i class="fa-solid fa-angle-right"></i> Services</a>
+            </li>
+            <li>
+              <a href="#solutions"><i class="fa-solid fa-angle-right"></i> Solutions</a>
+            </li>
+            <li>
+              <a href="#events"><i class="fa-solid fa-angle-right"></i> Events</a>
+            </li>
+            <li>
+              <a href="#traning"><i class="fa-solid fa-angle-right"></i> Traning</a>
+            </li>
+            <li>
+              <a href="#contactus"><i class="fa-solid fa-angle-right"></i> Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Address</h4>
+          <ul>
+            <li>Office Address:</li>
+            <li>
+              <i
+                >Fortuna Plaza, Office No 704, Opp. Rainbow Plaza, Pimple
+                Saudagar, Pune – 411027 Mumbai, Jaipur address as well</i
+              >
+            </li>
+            <li>Contact Details:</li>
+            <li>
+              Land Line: 020-25896451 Mobile : Mr.Raj: 09272150171 / 08805494880
+            </li>
+            <li>Email:</li>
+            <li>
+              Information, Enquiries, Suggestions: info@godwittech.com Technical
+              : tech@godwittech.com
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>GOOGLE MAP</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27150.393324246823!2d73.7899563363273!3d19.955133101363092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdd95331134fce7%3A0xd318c776f24a83fe!2sGandhi%20Nagar%20Airport%20Area%2C%20Deolali%20Gaon%2C%20Nashik%2C%20Maharashtra!5e1!3m2!1sen!2sin!4v1737032408559!5m2!1sen!2sin"
+            width="300"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="footer-section">
+          <h4>GET IN TOUCH</h4>
+          <div class="footer-socials">
+            <form action="#">
+              <input type="text" name="name" id="" placeholder="Name" />
+              <input type="email" name="email" id="" placeholder="Email" />
+              <input type="number" name="number" id="" placeholder="Number" />
+              <input type="text" name="subject" id="" placeholder="Subject" />
+              <input
+                type="text"
+                name="message"
+                id=""
+                placeholder="Message"
+              /><br /><br />
+              <button>Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p><a href="#">Godwit Technologies</a> © 2016</p>
+        <div class="footer-icons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-google-plus-g"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scrollTopBtn">↑</button>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

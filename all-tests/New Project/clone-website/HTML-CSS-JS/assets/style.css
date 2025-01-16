@@ -129,11 +129,6 @@ h3 {
   padding: 0 15px 20px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-  .service-card {
-    width: 45%;
-  }
-}
 
 
 /* Soultions Contanier */
@@ -198,8 +193,8 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 400px; /* adjust as needed */
-    background-color: #f8f8f8;
+    height: 500px; /* adjust as needed */
+    background-image: url('../images/background.jpg');
     padding: 40px 0;
     position: relative;
   }
@@ -264,5 +259,233 @@ h3 {
   .scroll-left:hover, .scroll-right:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+
+  .testimonial-h3{
+    text-align: center;
+  }
+
+  .testimonial-h6{
+    text-align: center;
+  }
   
+
+
+  /* Company info */
+
+  .company-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #07aeef;
+    padding: 3rem;
+  }  
+  .company-info h5{
+    color: white;
+  }
+  .location i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+  }
+
+  .call i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+
+  }
+
+  .address i{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 1.8rem;
+    padding: 1rem;
+
+  }
+
+/* Footer */
+
+footer {
+  background-color: #22252d;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 15px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  position: relative;
+  right: 2rem;
+  font-size: 1rem;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: rgb(57 188 242);
+}
+
+.footer-socials form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-socials form input{
+  padding: 0.3rem;
+  margin: 0.4rem;
+  border-radius: 0.3rem;
+}
+
+.footer-socials button{
+  padding: 0.3rem;
+  margin: 0.4rem;
+  border-radius: 0.3rem;
+  position: relative;
+  bottom: 2rem;
+  background-color: rgb(57 188 242);
+  color: white;
+  width: 50%;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+.footer-bottom a{
+  text-decoration: none;
+  color:  rgb(57 188 242);
+  font-size: 1rem;
+}
+.footer-icons i{
+  margin: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Scroll-to-Top Button */
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.3s;
+}
+
+#scrollTopBtn:hover {
+  background: #005f6b;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 20px ;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+  /* Media Query */
+
+  @media (max-width: 769px){
+    .company-info{
+      flex-wrap: wrap;
+    }
+    .location{
+      margin: 1rem;
+    }
+    .call{
+      margin: 1rem;
+    }
+    .address{
+      margin: 1rem;
+    }
+  }
   
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .service-card {
+      width: 45%;
+    }
+  }
