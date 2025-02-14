@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch and Post API Example</title>
+  </head>
+  <body>
+    <h2>Fetch and Display Data</h2>
+    <button onclick="fetchData()">Fetch Data</button>
+    <ul id="dataList"></ul>
+
+    <h2>Submit Data</h2>
+    <form id="postForm">
+      <input
+        type="text"
+        id="title"
+        placeholder="Enter Title"
+        required
+      /><br /><br />
+      <textarea id="body" placeholder="Enter Body" required></textarea
+      ><br /><br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      const apiUrl = "https://jsonplaceholder.typicode.com/posts"; // Example API
+      let submittedData = []; // Array to store submitted data
+
+      // Function to fetch and display data
+      function fetchData() {
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            const dataList = document.getElementById("dataList");
+            dataList.innerHTML = ""; // Clear previous data
+            data.slice(0, 5).forEach((item) => {
+              // Display only first 5 items
+              const li = document.createElement("li");
+              li.textContent = `${item.id}: ${item.title}`;
+              dataList.appendChild(li);
+            });
+
+            // Display the submitted data too
+            submittedData.forEach((item) => {
+              const li = document.createElement("li");
+              li.textContent = `Submitted - Title: ${item.title}, Body: ${item.body}`;
+              dataList.appendChild(li);
+            });
+          })
+          .catch((error) => console.error("Error fetching data:", error));
+      }
+
+      // Function to send data (POST request)
+      document
+        .getElementById("postForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent page reload
+
+          const title = document.getElementById("title").value;
+          const body = document.getElementById("body").value;
+
+          // Post data to the API
+          fetch(apiUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ title, body, userId: 1 }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              // Store submitted data in an array
+              submittedData.push({ title, body });
+
+              // Clear the form after submission
+              document.getElementById("postForm").reset();
+
+              // Alert and fetch data again to update the displayed list
+              alert("Data submitted successfully!");
+              fetchData(); // Re-fetch data to include the submitted data
+            })
+            .catch((error) => console.error("Error posting data:", error));
+        });
+    </script>
+  </body>
+</html>
